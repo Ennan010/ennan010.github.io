@@ -82,13 +82,7 @@
 - **添加项目**：在项目展示部分添加你的项目链接和描述
 - **更改背景音乐**：替换`assets/audio`中的音频文件
 
-### 📸 截图
 
-#### 桌面版
-![桌面版预览](assets/images/desktop-preview.jpg)
-
-#### 移动版
-![移动版预览](assets/images/mobile-preview.jpg)
 
 ### 📄 许可证
 
@@ -170,13 +164,7 @@ This is a modern personal portfolio website designed for showcasing academic and
 - **Add projects**: Add your project links and descriptions in the projects section
 - **Change background music**: Replace audio files in `assets/audio`
 
-### 📸 Screenshots
 
-#### Desktop Version
-![Desktop Preview](assets/images/desktop-preview.jpg)
-
-#### Mobile Version
-![Mobile Preview](assets/images/mobile-preview.jpg)
 
 ### 📄 License
 
