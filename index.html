@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to my personal website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- 背景音乐 -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="assets/audio/MoonHalo.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+    
+    <!-- 音乐控制按钮 -->
+    <div class="music-control">
+        <div class="music-info">
+            <span class="song-title">Moon Halo</span>
+        </div>
+        <button id="musicBtn" title="背景音乐控制">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+    
+    <header class="hidden-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1> </h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="active">首页</a>
+                <a href="#resume">个人简介</a>
+                <a href="#projects">项目展示</a>
+                <!-- <a href="#contact">留言板</a> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 封面页 -->
+        <section id="home" class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="quote"></h1>
+                <p>欢迎来到我的个人主页</p>
+                <div class="social-links">
+                    <a href="https://github.com/Ennan010" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-bilibili"></i></a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#resume">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 简历部分 - 卡片式布局 -->
+        <section id="resume" class="resume">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2>个人简历</h2>
+                    <p>研究方向与专业技能</p>
+                </div>
+                
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="profile">个人资料</button>
+                        <button class="tab-btn" data-tab="skills">专业技能</button>
+                        <button class="tab-btn" data-tab="experience">工作经验</button>
+                        <button class="tab-btn" data-tab="education">教育背景</button>
+                    </div>
+                    
+                    <div class="tab-content-wrapper">
+                        <!-- 个人资料 -->
+                        <div class="tab-content active" id="profile">
+                            <div class="profile-container">
+                                <div class="profile-image">
+                                    <a href="https://github.com/Ennan010" target="_blank">
+                                        <img src="https://avatars.githubusercontent.com/u/64961315?v=4" alt="个人照片">
+                                    </a>
+                                    <div class="profile-education">
+                                        <p>Chongqing University of Posts and Telecommunications</p>
+                                    </div>
+                                </div>
+                                <div class="profile-details">
+                                    <h3>个人信息</h3>
+                                    <div class="info-grid">
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">学历</span>
+                                                <span class="info-value">软件工程硕士在读</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-code-branch"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">研究方向</span>
+                                                <span class="info-value">计算机视觉 | 裂缝检测 | 目标检测 | 语义分割</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-laptop-code"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">开发领域</span>
+                                                <span class="info-value">深度学习 | 图像处理</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">地区</span>
+                                                <span class="info-value">中国，重庆</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="profile-bio">
+                                        <h3>关于我</h3>
+                                        <p>我是一名热爱人工智能的研究生，对计算机视觉、多模态学习和深度学习等领域有浓厚兴趣。目前在重庆邮电大学攻读软件工程硕士学位，专注于前沿AI技术的研究与应用。我擅长运用深度学习模型解决实际问题，并热衷于探索AI在工程领域的创新应用。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 专业技能 -->
+                        <div class="tab-content" id="skills">
+                            <h3>技术栈 & 专业能力</h3>
+                            <div class="skills-container">
+                                <div class="skills-category">
+                                    <h4>前端开发</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">HTML</span>
+                                                <span class="skill-percentage">75%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">CSS</span>
+                                                <span class="skill-percentage">69%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 69%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">JavaScript</span>
+                                                <span class="skill-percentage">64%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 64%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills-category">
+                                    <h4>深度学习</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">PyTorch</span>
+                                                <span class="skill-percentage">60%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">TensorFlow</span>
+                                                <span class="skill-percentage">60%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">目标检测算法</span>
+                                                <span class="skill-percentage">85%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                    <!-- 在这里可以多添加 -->
+                                        <!-- <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">目标检测算法</span>
+                                                <span class="skill-percentage">85%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 85%"></div>
+                                            </div>
+                                        </div> -->
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="skills-category">
+                                    <h4>图像处理</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">OpenCV</span>
+                                                <span class="skill-percentage">85%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">语义分割</span>
+                                                <span class="skill-percentage">60%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="skills-category">
+                                    <h4>编程语言与工具</h4>
+                                    <div class="skill-badges">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">Typescript</span>
+                                        <!-- <span class="skill-badge">CUDA</span> -->
+                                        <span class="skill-badge">Git</span>
+                                        <span class="skill-badge">计算机视觉</span>
+                                        <span class="skill-badge">深度学习</span>
+                                        <span class="skill-badge">机器学习</span>
+                                        <span class="skill-badge">多模态</span>
+                                        <span class="skill-badge">Docker</span>
+                                        <span class="skill-badge">数据可视化</span>
+                                        <span class="skill-badge">模型部署</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 工作经验 -->
+                        <div class="tab-content" id="experience">
+                            <h3>研究经历</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>裂缝检测算法研究</h4>
+                                            <h5>计算机视觉实验室</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024年 - 至今</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>参与XX裂缝检测算法研究与开发，负责模型设计和优化。</p>
+                                            <ul class="timeline-list">
+                                                <li>提出轻量级YOLO 改进模型，检测精度提升15%</li>
+                                                <!-- <li>实现基于注意力机制的裂缝分割网络</li>
+                                                <li>开发模型量化与部署方案，用于边缘设备</li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>AI平台开发与API集成</h4>
+                                            <h5><a href="https://github.com/aipotheosis-labs/aipolabs" target="_blank">Aipotheosis Labs</a></h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023年 - 2024年</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>帮助Aipotheosis Labs团队集成MCP Server API，提升平台功能与性能。</p>
+                                            <ul class="timeline-list">
+                                                <li>完成MCP Server后端API的设计与集成</li>
+                                                <li>优化API调用流程，提高系统响应速度</li>
+                                                <li>协助解决跨平台兼容性问题</li>
+                                                <li>参与开源项目代码维护与文档编写</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        
+                        <!-- 教育背景 -->
+                        <div class="tab-content" id="education">
+                            <h3>教育背景</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>软件工程 - 学术硕士</h4>
+                                            <h5>重庆邮电大学</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024年 - 至今</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <!-- <p>硕士学位，主修软件工程。</p> -->
+                                            <ul class="timeline-list">
+                                                <li>研究方向：裂缝检测，专注于计算机视觉中的目标检测与语义分割技术</li>
+                                                <li>利用深度学习模型进行结构裂缝的自动识别与分析</li>
+                                                <li>探索高效轻量级神经网络在工程安全检测领域的应用</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>深度学习专项培训</h4>
+                                            <h5>NVIDIA深度学习学院</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023年</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>完成深度学习和计算机视觉专业培训课程。</p>
+                                            <ul class="timeline-list">
+                                                <li>掌握深度神经网络设计与优化技巧</li>
+                                                <li>学习高级计算机视觉模型与框架</li>
+                                                <li>获得NVIDIA认证深度学习专业证书</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>计算机科学与技术</h4>
+                                            <h5>本科院校</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2020年 - 2024年</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>本科学位，计算机科学专业。</p>
+                                            <ul class="timeline-list">
+                                                <li>掌握计算机基础理论和专业知识</li>
+                                                <li>参与多项图像处理和机器学习课程项目</li>
+                                                <li>获得校级优秀毕业设计奖</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>荣誉与证书</h4>
+                                            <h5>学术成就与专业认证</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2019年 - 至今</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <ul class="timeline-list">
+                                                <li>机器人证书</li>
+                                                <li>英语六级证书 (CET-6)</li>
+                                                <li>校级奖学金</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>学科竞赛与项目</h4>
+                                            <!-- <h5>重要参赛与实践经历</h5> -->
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021年 - 2023年</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <!-- <p>参与的重要学科竞赛和实践项目。</p> -->
+                                            <ul class="timeline-list">
+                                                <!-- <li>参与"挑战杯"全国大学生课外学术科技作品竞赛</li> -->
+                                                <li>数学建模大赛 获校级奖A等</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目部分 -->
+        <section id="projects" class="projects">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2>项目展示</h2>
+                    <p>查看我的代码仓库和技术博客</p>
+                </div>
+                <div class="projects-container">
+                    <div class="external-links">
+                        <!-- <a href="https://github.com/Ennan010" target="_blank" class="external-link">
+                            <div class="link-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>GitHub</h3>
+                                <p>浏览我的代码仓库和开源项目</p>
+                            </div>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                         -->
+                        <a href="#" target="_blank" class="external-link">
+                            <div class="link-icon">
+                                <i class="fa-brands fa-bilibili"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>哔哩哔哩</h3>
+                                <p>关注我的B站账号，查看视频教程和分享</p>
+                            </div>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <!-- 暂时不加 -->
+                        <a href="#" target="_blank" class="external-link">
+                            <div class="link-icon">
+                                <i class="fas fa-blog"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>CSDN博客</h3>
+                                <p>阅读我的技术文章和裂缝检测研究心得</p>
+                            </div>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="#" target="_blank" class="external-link">
+                            <div class="link-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>学术成果</h3>
+                                <p>查看我的论文和研究项目</p>
+                            </div>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系部分 - 暂时隐藏
+        <section id="contact" class="contact">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2>留言板</h2>
+                    <p>欢迎留下您的想法和建议</p>
+                </div>
+                <div class="contact-content">
+                    <form id="contact-form">
+                        <textarea placeholder="在这里留下您的想法..."></textarea>
+                        <button type="submit">提交留言</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                © <span id="currentYear"></span> Ennan010. All Rights Reserved.
+            </div>
+        </div>
+        <!-- 隐藏的版权标识 -->
+        <div style="display:none" data-author="Ennan010" data-protected="true" id="hidden-copyright">
+            <!-- 
+            ================================================================
+            =       Copyright © 2024 Ennan010. All rights reserved.        =
+            =       此网站内容受版权法保护。未经授权，禁止复制使用。         =
+            ================================================================
+            -->
+        </div>
+    </footer>
+
+    <script src="js/quotes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
