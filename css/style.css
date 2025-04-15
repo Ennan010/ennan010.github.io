@@ -909,7 +909,7 @@ footer {
     align-items: flex-end;
 }
 
-#musicToggle {
+#musicBtn {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -926,12 +926,12 @@ footer {
     position: relative;
 }
 
-#musicToggle:hover {
+#musicBtn:hover {
     background-color: var(--primary-color);
     transform: scale(1.1);
 }
 
-#musicToggle.muted {
+#musicBtn.muted {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -951,7 +951,7 @@ footer {
     }
 }
 
-#musicToggle.playing {
+#musicBtn.playing {
     animation: pulse 2s infinite;
 }
 
