@@ -6,7 +6,7 @@
 
 [中文](#中文) | [English](#english)
 
-![网站预览](assets/images/website-preview.png)
+
 
 ## 中文
 
