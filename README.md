@@ -1,8 +1,6 @@
 # 个人主页 | Personal Portfolio Website
 
-![GitHub stars](https://img.shields.io/github/stars/Ennan010/personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Ennan010/personal-portfolio?style=social)
-![GitHub license](https://img.shields.io/github/license/Ennan010/personal-portfolio)
+
 
 [中文](#中文) | [English](#english)
 
