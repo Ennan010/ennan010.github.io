@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="assets/audio/MoonHalo_piano.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Control Button -->
+    <div class="music-control">
+        <div class="music-info">
+            <span class="song-title">Moon Halo</span>
+        </div>
+        <button id="musicBtn" title="Background Music Control">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+    
+    <header class="hidden-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1></h1> <!-- Language switch will be here -->
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#resume">Profile</a>
+                <a href="#projects">Projects</a>
+                <!-- <a href="#contact">Message Board</a> -->
+                <button id="langToggle" class="lang-toggle" title="English" onclick="switchLanguage()">EN / 中</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cover Page -->
+        <section id="home" class="hero">
+            <div class="hero-background_en"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="quote"></h1> <!-- Quote typing effect -->
+                <p>Welcome to my personal homepage</p>
+                <div class="social-links">
+                    <a href="https://github.com/Ennan010" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://space.bilibili.com/291313947?spm_id_from=333.1387.follow.user_card.click" target="_blank"><i class="fa-brands fa-bilibili"></i></a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#resume">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Resume Section - Card Layout -->
+        <section id="resume" class="resume">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2>Personal Resume</h2>
+                    <p>Research Direction and Professional Skills</p>
+                </div>
+                
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="profile">Profile</button>
+                        <button class="tab-btn" data-tab="skills">Skills</button>
+                        <button class="tab-btn" data-tab="experience">Experience</button>
+                        <button class="tab-btn" data-tab="education">Education</button>
+                    </div>
+                    
+                    <div class="tab-content-wrapper">
+                        <!-- Personal Information -->
+                        <div class="tab-content active" id="profile">
+                            <div class="profile-container">
+                                <div class="profile-image">
+                                    <a href="https://github.com/Ennan010" target="_blank">
+                                        <img src="https://avatars.githubusercontent.com/u/64961315?v=4" alt="Personal Photo">
+                                    </a>
+                                    <div class="profile-education">
+                                        <p>Chongqing University of Posts and Telecommunications</p>
+                                    </div>
+                                </div>
+                                <div class="profile-details">
+                                    <h3>Personal Information</h3>
+                                    <div class="info-grid">
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">Education</span>
+                                                <span class="info-value">School of Computer Science and Technology - Master of Software Engineering</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-code-branch"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">Research</span>
+                                                <span class="info-value">Computer Vision | Crack Detection | Object Detection | Semantic Segmentation</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-laptop-code"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">Development</span>
+                                                <span class="info-value">Frontend | Deep Learning | Godot</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            <div class="info-text">
+                                                <span class="info-label">Location</span>
+                                                <span class="info-value">Chongqing, China</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="profile-bio">
+                                        <h3>About Me</h3>
+                                        <p>A graduate student passionate about technology and innovation, I continuously explore computer vision, deep learning algorithms, frontend development, and game design. Currently pursuing a Master's degree in Computer Science and Technology at Chongqing University of Posts and Telecommunications, I focus on the integration and practical application of cutting-edge technologies. I excel at transforming theoretical innovations into practical solutions, especially using AI technology to build intuitive and efficient user interfaces and developing creative interactive experiences. I look forward to injecting more possibilities into the digital world through technological innovation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Professional Skills -->
+                        <div class="tab-content" id="skills">
+                            <h3>Tech Stack & Professional Abilities</h3>
+                            <div class="skills-container">
+                                <div class="skills-category">
+                                    <h4>Frontend Development</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">HTML</span>
+                                                <span class="skill-percentage">75%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">CSS</span>
+                                                <span class="skill-percentage">69%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 69%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">JavaScript</span>
+                                                <span class="skill-percentage">64%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 64%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills-category">
+                                    <h4>Deep Learning</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">PyTorch</span>
+                                                <span class="skill-percentage">60%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">TensorFlow</span>
+                                                <span class="skill-percentage">60%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 60%"></div>
+                                            </div>
+                                        </div> -->
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">Detection Algorithms</span>
+                                                <span class="skill-percentage">85%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills-category">
+                                    <h4>Image Processing</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">OpenCV</span>
+                                                <span class="skill-percentage">85%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-name-wrapper">
+                                                <span class="skill-name">Semantic Segmentation</span>
+                                                <span class="skill-percentage">60%</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="skills-category">
+                                    <h4>Programming Languages & Tools</h4>
+                                    <div class="skill-badges">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">PyTorch</span>
+                                        <span class="skill-badge">TypeScript</span>
+                                        <span class="skill-badge">JavaScript</span>
+                                        <!-- <span class="skill-badge">CUDA</span> -->
+                                        <span class="skill-badge">Git</span>
+                                        <span class="skill-badge">Computer Vision</span>
+                                        <span class="skill-badge">Deep Learning</span>
+                                        <!-- <span class="skill-badge">Machine Learning</span> -->
+                                        <!-- <span class="skill-badge">Multimodal</span> -->
+                                        <span class="skill-badge">Docker</span>
+                                        <!-- <span class="skill-badge">Data Visualization</span> -->
+                                        <!-- <span class="skill-badge">Model Deployment</span> -->
+                                        <span class="skill-badge">Godot</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Work Experience -->
+                        <div class="tab-content" id="experience">
+                            <h3>Research Experience</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Crack Detection Algorithm Research</h4>
+                                            <h5>Computer Vision Laboratory, CQUPT</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 - Present</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Participated in crack detection algorithm research and development, responsible for model design and optimization.</p>
+                                            <ul class="timeline-list">
+                                                <li>Proposed a lightweight U-Net improved model with enhanced detection accuracy</li>
+                                                <li>Implemented crack segmentation network based on attention mechanism</li>
+                                                <li>Focused on computer vision tasks including object detection, semantic segmentation, and image classification</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Background -->
+                        <div class="tab-content" id="education">
+                            <h3>Education Background</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Software Engineering - Master</h4>
+                                            <h5>Chongqing University of Posts and Telecommunications</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 - Present</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <ul class="timeline-list">
+                                                <li>Research direction: crack detection, focusing on object detection and semantic segmentation technology in computer vision</li>
+                                                <li>Using deep learning models for automatic recognition and analysis of road cracks</li>
+                                                <li>Researching road crack detection applications in infrastructure such as bridges, tunnels, and highways</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Honors & Certificates</h4>
+                                            <h5>Academic Achievements & Professional Certifications</h5>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2019 - Present</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <ul class="timeline-list">
+                                                <li>Service Robot Application Technician Certificate</li>
+                                                <li>College English Test (CET-4 & CET-6)</li>
+                                                <li>University Scholarship</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Academic Competitions & Projects</h4>
+                                            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 - 2023</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <ul class="timeline-list">
+                                                <li>Mathematical Modeling Competition - Class A University Award</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                    <p>View my code repositories and technical blogs</p>
+                </div>
+                <div class="projects-container">
+                    <div class="external-links">
+                        <a href="https://space.bilibili.com/291313947?spm_id_from=333.1387.follow.user_card.click" target="_blank" class="external-link">
+                            <div class="link-icon">
+                                <i class="fa-brands fa-bilibili"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Bilibili</h3>
+                                <p>Follow my Bilibili account for video tutorials and sharing</p>
+                            </div>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="https://blog.csdn.net/weixin_46681416?type=blog" target="_blank" class="external-link">
+                            <div class="link-icon">
+                                <i class="fas fa-blog"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>CSDN Blog</h3>
+                                <p>Read my technical articles and insights</p>
+                            </div>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/Ennan010" target="_blank" class="external-link">
+                            <div class="link-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Learning Journey</h3>
+                                <p>View my projects</p>
+                            </div>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                © <span id="currentYear"></span> Ennan010. All Rights Reserved.
+            </div>
+        </div>
+        <!-- Hidden copyright -->
+        <div style="display:none" data-author="Ennan010" data-protected="true" id="hidden-copyright">
+            <!-- 
+            ================================================================
+            =       Copyright © 2024 Ennan010. All rights reserved.        =
+            =       This website content is protected by copyright law.    =
+            ================================================================
+            -->
+        </div>
+    </footer>
+
+    <script src="js/quotes_en.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+</body>
+</html> 

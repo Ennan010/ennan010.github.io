@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初始化显示当前名言
     setTimeout(() => {
         typeQuote();
-    }, 1000);
+    }, 100); // 延迟0.1秒后开始打字
     
     // 打字效果函数
     function typeQuote() {
@@ -183,7 +183,7 @@ function addHiddenCopyright() {
 // 导航栏滚动效果和背景淡化
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
-    const heroBackground = document.querySelector('.hero-background');
+    const heroBackground = document.querySelector('.hero-background,.hero-background_en');
     const scrollPosition = window.scrollY;
     
     // 更新导航栏背景 - 始终保持透明
@@ -295,7 +295,7 @@ document.getElementById('contact-form')?.addEventListener('submit', function(e) 
 });
 
 // 音乐播放控制
-var isMusicPlaying = true; // 初始状态为未播放
+var isMusicPlaying = false; // 初始状态为未播放
 var musicAttempted = false; // 是否已尝试播放音乐
 var bgMusic = document.getElementById('bgMusic');
 var musicBtn = document.getElementById('musicBtn');

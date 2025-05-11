@@ -106,6 +106,19 @@ main {
     background-repeat: no-repeat;
     z-index: 1;
 }
+.hero-background_en {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/ganyu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}
 
 .hero-overlay {
     position: absolute;
@@ -973,4 +986,49 @@ footer {
 .music-control:hover .music-info {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* 语言切换按钮 */
+.lang-toggle {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.lang-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.lang-toggle.en {
+    background-color: rgba(108, 92, 231, 0.3);
+}
+
+/* 导航栏语言切换文本 */
+.lang-switch {
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.lang-switch:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.lang-text {
+    white-space: nowrap;
 } 
