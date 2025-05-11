@@ -510,7 +510,10 @@ footer {
     }
 
     .nav-menu {
-        display: none;
+        /* display: none; */
+        display: flex; /* 添加这一行保证显示 */
+        flex-wrap: wrap; /* 允许元素换行 */
+        justify-content: center; /* 居中显示 */
     }
 
     .hero-content h1 {
