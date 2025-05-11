@@ -295,7 +295,7 @@ document.getElementById('contact-form')?.addEventListener('submit', function(e) 
 });
 
 // 音乐播放控制
-var isMusicPlaying = false; // 初始状态为未播放
+var isMusicPlaying = true; // 初始状态为未播放
 var musicAttempted = false; // 是否已尝试播放音乐
 var bgMusic = document.getElementById('bgMusic');
 var musicBtn = document.getElementById('musicBtn');
